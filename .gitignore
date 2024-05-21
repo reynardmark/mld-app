@@ -33,13 +33,13 @@
 /config/master.key
 
 # Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+frontend/logs
+frontend/l*.log
+frontend/lnpm-debug.log*
+frontend/lyarn-debug.log*
+frontend/lyarn-error.log*
+frontend/lpnpm-debug.log*
+frontend/llerna-debug.log*
 
 node_modules
 dist
@@ -47,7 +47,7 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
+frontend/.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
