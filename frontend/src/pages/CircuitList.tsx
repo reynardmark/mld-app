@@ -1,10 +1,6 @@
 import { DataGrid, GridRowsProp, GridColDef } from "@mui/x-data-grid";
-
-// const rows: GridRowsProp = [
-//   { id: 1, circuitName: "414YL", substationName: "Parang" },
-//   { id: 2, circuitName: "415YL", substationName: "Parang" },
-//   { id: 3, circuitName: "404E", substationName: "Balintawak" },
-// ];
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 
 const createdRows = [];
 
