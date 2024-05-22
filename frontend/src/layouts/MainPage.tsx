@@ -16,7 +16,8 @@ export default function MainPage() {
       />
       <Box
         sx={{
-          maxHeight: "100vh",
+          // minHeight: "100vh",
+          height: "100vh",
           width: "100%",
           backgroundColor: "var(--page-background)",
           marginLeft: `${SIDEBAR_WIDTH}px`,

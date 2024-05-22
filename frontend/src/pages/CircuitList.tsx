@@ -14,14 +14,15 @@ const columns: GridColDef[] = [
   {
     field: "circuitName",
     headerName: "Circuit Name",
-    width: 150,
+    width: 200,
     editable: true,
   },
   {
     field: "substationName",
     headerName: "Substation Name",
-    width: 150,
+    width: 200,
   },
+  { field: "actions", headerName: "Actions", width: 150 },
 ];
 
 export default function CircuitList() {
