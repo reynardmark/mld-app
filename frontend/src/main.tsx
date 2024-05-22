@@ -8,7 +8,20 @@ import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import router from "./router/routes";
 
-const theme = createTheme({});
+const theme = createTheme({
+  components: {
+    MuiButtonBase: {
+      defaultProps: {
+        disableRipple: true,
+      },
+    },
+  },
+  palette: {
+    primary: {
+      main: "#FD4F11",
+    },
+  },
+});
 
 const queryClient = new QueryClient();
 

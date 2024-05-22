@@ -4,7 +4,7 @@ import {
   isRouteErrorResponse,
   useLocation,
 } from "react-router-dom";
-import { Box, Button, Paper, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 export default function Error() {
   const navigate = useNavigate();
@@ -29,6 +29,7 @@ export default function Error() {
         sx={{
           fontWeight: 500,
         }}
+        textAlign="center"
       >
         {isRouteErrorResponse(error)
           ? "Page Not Found"
