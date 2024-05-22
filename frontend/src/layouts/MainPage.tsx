@@ -24,7 +24,7 @@ export default function MainPage() {
         padding={2}
         gap={4}
       >
-        <MainPageHeader />
+        <MainPageHeader toggleOpenMobile={toggleOpenMobile} />
         <Outlet />
       </Box>
     </Box>

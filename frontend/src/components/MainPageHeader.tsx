@@ -1,12 +1,27 @@
-import { Box, Typography } from "@mui/material";
+import { Box, IconButton, Typography } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { paths } from "../constants";
+import MenuIcon from "@mui/icons-material/Menu";
 
-export default function MainPageHeader() {
+interface MainPageHeaderProps {
+  toggleOpenMobile: () => void;
+}
+
+export default function MainPageHeader({
+  toggleOpenMobile,
+}: MainPageHeaderProps) {
   const location = useLocation();
 
   return (
-    <Box display="flex">
+    <Box display="flex" alignItems="center">
+      <IconButton
+        onClick={toggleOpenMobile}
+        sx={{
+          display: { sm: "none" },
+        }}
+      >
+        <MenuIcon />
+      </IconButton>
       <Typography
         variant="h5"
         sx={{

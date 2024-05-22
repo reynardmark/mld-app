@@ -14,6 +14,7 @@ import {
 
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import ListIcon from "@mui/icons-material/List";
 import { useWindowDimensions } from "../hooks";
 import { useLocation } from "react-router-dom";
 import meralcoLogo from "../assets/meralco-logo.png";
@@ -26,7 +27,11 @@ interface SidebarProps {
 }
 
 const DRAWER_WIDTH = 240;
-const SIDEBAR_ICONS = [<DashboardIcon />, <ArrowDropDownCircleIcon />];
+const SIDEBAR_ICONS = [
+  <DashboardIcon />,
+  <ArrowDropDownCircleIcon />,
+  <ListIcon />,
+];
 
 const SIDEBAR_ITEMS = paths.map((path, idx) => {
   return { ...path, icon: SIDEBAR_ICONS[idx] };
