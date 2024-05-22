@@ -1,6 +1,6 @@
 import { Box, IconButton, Typography } from "@mui/material";
 import { useLocation } from "react-router-dom";
-import { paths } from "../constants";
+import { PATHS } from "../constants";
 import MenuIcon from "@mui/icons-material/Menu";
 
 interface MainPageHeaderProps {
@@ -28,7 +28,7 @@ export default function MainPageHeader({
           fontWeight: 700,
         }}
       >
-        {paths.filter((path) => location.pathname === path.pathname)[0].name}
+        {PATHS.filter((path) => location.pathname === path.pathname)[0].name}
       </Typography>
     </Box>
   );

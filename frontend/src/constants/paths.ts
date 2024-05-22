@@ -1,4 +1,4 @@
-const paths = [
+const PATHS = [
   {
     name: "Dashboard",
     pathname: "/",
@@ -10,4 +10,4 @@ const paths = [
   { name: "Circuit List", pathname: "/list" },
 ] as const;
 
-export default paths;
+export default PATHS;

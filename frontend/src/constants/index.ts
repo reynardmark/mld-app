@@ -1,3 +1,4 @@
-import paths from "./paths";
+import PATHS from "./paths";
+import SIDEBAR_WIDTH from "./sidebarWidth";
 
-export { paths };
+export { PATHS, SIDEBAR_WIDTH };
